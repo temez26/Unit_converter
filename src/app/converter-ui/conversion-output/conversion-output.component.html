@@ -1,0 +1,4 @@
+<mat-form-field [formGroup]="parentForm">
+  <mat-label>{{ parentForm.get("conversionOutput")?.value }}</mat-label>
+  <input matInput id="output" formControlName="output" readonly />
+</mat-form-field>

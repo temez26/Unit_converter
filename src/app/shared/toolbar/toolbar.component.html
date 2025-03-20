@@ -1,0 +1,14 @@
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    [routerLink]="isInfoPage ? '/' : '/info'"
+  >
+    <mat-icon class="info">{{ isInfoPage ? "home" : "info" }}</mat-icon>
+  </button>
+  <span class="title">{{ title }}</span>
+  <button mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon class="settings">settings</mat-icon>
+  </button>
+</mat-toolbar>

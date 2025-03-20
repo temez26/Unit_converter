@@ -1,0 +1,24 @@
+<div class="converter-ui-component">
+  <form [formGroup]="parentForm">
+    <div class="grid-container">
+      <div class="grid-item">
+        <app-category [parentForm]="parentForm"></app-category>
+      </div>
+      <div class="grid-item category-icon">
+        <app-category-icon [parentForm]="parentForm"></app-category-icon>
+      </div>
+      <div class="grid-item">
+        <app-converter [parentForm]="parentForm"></app-converter>
+      </div>
+      <div class="grid-item">
+        <app-conversion-input [parentForm]="parentForm"></app-conversion-input>
+      </div>
+      <div class="grid-item empty-icon"></div>
+      <div class="grid-item">
+        <app-conversion-output
+          [parentForm]="parentForm"
+        ></app-conversion-output>
+      </div>
+    </div>
+  </form>
+</div>

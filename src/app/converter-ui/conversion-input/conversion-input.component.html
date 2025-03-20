@@ -1,0 +1,7 @@
+<mat-form-field [formGroup]="parentForm">
+  <mat-label>{{ parentForm.get("conversionInput")?.value }}</mat-label>
+  <input matInput id="input" formControlName="input" />
+  <mat-error *ngIf="parentForm.get('input')?.hasError('pattern')">
+    Please enter a valid number
+  </mat-error>
+</mat-form-field>

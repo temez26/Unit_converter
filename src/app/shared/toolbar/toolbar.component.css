@@ -1,0 +1,32 @@
+mat-toolbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.example-icon {
+  color: white;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+mat-icon.info {
+  color: #ff9800;
+}
+
+mat-icon.settings {
+  color: #007bff;
+}
+button[mat-icon-button] {
+  transition: transform 0.2s ease-in-out;
+}
+
+button[mat-icon-button]:hover {
+  transform: scale(1.1);
+}
