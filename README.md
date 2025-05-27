@@ -1,25 +1,41 @@
-# Unit Converter ⚡
+# Unit Converter
 
-Angular app for converting units.
+A modern Angular application for unit conversions including weight, temperature, and distance measurements.
 
-## 🚀 Run Locally
+## Features
 
-### Without Docker
+- **Weight**: Convert between kilograms and pounds
+- **Temperature**: Convert between Celsius and Fahrenheit
+- **Distance**: Convert between meters and miles
+- Responsive design with Material UI components
 
-```sh
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+```bash
 npm install
-npm run start
+npm start
 ```
 
-Open [http://localhost:4200](http://localhost:4200)
+Visit `http://localhost:4200`
 
-### With Docker 🐳
+### Docker Deployment
 
-```sh
+```bash
 docker build -t unit-converter .
 docker run -p 8080:8080 unit-converter
 ```
 
-Open [http://localhost:8080](http://localhost:8080)
+Visit `http://localhost:8080`
 
-Happy converting! 😃
+## Tech Stack
+
+- Angular 18
+- Angular Material
+- TypeScript
+- Docker & Nginx
